@@ -1,21 +1,21 @@
 [gd_scene format=3 uid="uid://dpvjem3t5rcww"]
 
-[ext_resource type="Texture2D" uid="uid://4t22mmmh7xe2" path="res://space-game/assets/kenney_simple-space/PNG/Default/ship_F.png" id="1_yhjix"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_ch47l"]
+[ext_resource type="Script" uid="uid://dngxqphc8u3bc" path="res://space-game/scenes/player.gd" id="1_a5g7e"]
+[ext_resource type="Texture2D" uid="uid://dpygndv4eu5dp" path="res://space-game/assets/kenney_simple-space/PNG/Default/ship_G.png" id="2_a5g7e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ik31s"]
 radius = 41.0
 height = 82.0
 
 [node name="player" type="CharacterBody2D" unique_id=654458980]
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1320266368]
-position = Vector2(33.000004, 35.999992)
-scale = Vector2(75.54791, 76.75001)
-mesh = SubResource("SphereMesh_ch47l")
-texture = ExtResource("1_yhjix")
+script = ExtResource("1_a5g7e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=93854076]
-position = Vector2(33, 32)
+position = Vector2(-7, 0)
 shape = SubResource("CapsuleShape2D_ik31s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1383538522]
+position = Vector2(-0.9999924, -1.9073486e-06)
+rotation = 1.5707964
+scale = Vector2(1.34375, 1.2890625)
+texture = ExtResource("2_a5g7e")
