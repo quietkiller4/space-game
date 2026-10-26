@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dpvjem3t5rcww"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_ik31s"]
+[ext_resource type="Texture2D" uid="uid://4t22mmmh7xe2" path="res://space-game/assets/kenney_simple-space/PNG/Default/ship_F.png" id="1_yhjix"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ch47l"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ik31s"]
 radius = 41.0
@@ -9,9 +11,10 @@ height = 82.0
 [node name="player" type="CharacterBody2D" unique_id=654458980]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1320266368]
-position = Vector2(32.75, 31.500006)
-scale = Vector2(66.50001, 32.500004)
-mesh = SubResource("CapsuleMesh_ik31s")
+position = Vector2(33.000004, 35.999992)
+scale = Vector2(75.54791, 76.75001)
+mesh = SubResource("SphereMesh_ch47l")
+texture = ExtResource("1_yhjix")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=93854076]
 position = Vector2(33, 32)
