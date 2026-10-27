@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bcf8tdyhg33qr"]
+
+[ext_resource type="Script" uid="uid://bhbt3267jaldb" path="res://space-game/scripts/main_menu.gd" id="1_1yyam"]
+
+[node name="main_menu" type="Control" unique_id=1820442094]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1yyam")
+
+[node name="title" type="TextEdit" parent="." unique_id=239036997]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.28500003
+anchor_top = 0.023000002
+anchor_right = 0.625
+anchor_bottom = 0.171
+offset_left = -0.32003784
+offset_top = 0.095998764
+offset_bottom = 0.19200134
+placeholder_text = "Title"
+
+[node name="button_manager" type="Control" parent="." unique_id=379552678]
+layout_mode = 1
+anchor_left = 0.28100002
+anchor_top = 0.33200002
+anchor_right = 0.72200006
+anchor_bottom = 0.86700004
+offset_left = 0.28796387
+offset_top = -0.13601685
+offset_right = -33.74408
+offset_bottom = 0.18395996
+
+[node name="start_button" type="Button" parent="button_manager" unique_id=861677249]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.24800001
+offset_right = 1.0
+offset_bottom = -0.056007385
+text = "Start"
+
+[node name="options_button" type="Button" parent="button_manager" unique_id=1945162183]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.30800003
+anchor_right = 1.0
+anchor_bottom = 0.55600005
+offset_left = -1.0
+offset_top = 0.12399292
+offset_bottom = 0.067977905
+text = "Options"
+
+[node name="quit_button" type="Button" parent="button_manager" unique_id=1017392724]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.61700004
+anchor_right = 1.0
+anchor_bottom = 0.86500007
+offset_left = -1.0
+offset_top = -0.09901428
+offset_bottom = -0.1550293
+text = "Quit"
